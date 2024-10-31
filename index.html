@@ -24,6 +24,11 @@
                 'banner-btn': 'rgba(171, 239, 95, 0.5)',
                 'description': 'rgba(73, 73, 73, 1)',
                 'card-description': 'rgba(115, 115, 115, 1)',
+                'bg-primary': 'rgba(255, 255, 255, 0)',
+                'concept-bg': 'rgba(231, 193, 211, 1)',
+                'process-bg': 'rgba(239, 218, 110, 1)',
+                'supervision-bg': 'rgba(164, 218, 195, 1)',
+                'budget-bg': 'rgba(119, 170, 234, 1)',
               }
             }
           }
@@ -39,8 +44,8 @@
         }
     </style>
 </head>
-<body class="font-manrope">
-    <header class="container mx-auto px-5">
+<body class="font-manrope m-0">
+    <header class="container mx-auto px-5 lg:px-0 lg:mb-24 mb-8">
         <!-- navbar -->
          <nav class="mt-12 mb-10">
             <div class="navbar bg-base-100">
@@ -109,8 +114,98 @@
             </div>
           </section>
     </header>
-    <main>
-
+    <main class="bg-gray-100  lg:px-0 px-5">
+        <!-- liveable spaces -->
+         <section class=" py-8 lg:pt-24 relative  lg:mb-24 mb-8">
+            <div class="ml-24 absolute top-4 left-8 hidden lg:block">
+                <img class="mt-4" src="./images/Vector.png" alt="">
+            </div>
+            <div class="container mx-auto flex flex-col lg:flex-row gap-9 justify-between">
+                
+                <div class="">
+                    <div class="text-center lg:text-left">
+                        <a class="btn bg-white rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i> About Us</a>
+                    </div>
+                    <h2 class="text-center lg:text-left font-bold lg:text-4xl text-2xl mt-4">We design thoughtful,<br> liveable spaces</h2>
+                    <p class="text-description py-6 text-center lg:text-left">The barn house captivates with its blend of rustic charm and<br class="hidden lg:block"> modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <div class="flex gap-6 bg-white p-6 rounded-2xl mb-6 lg:w-[620px]">
+                        <div>
+                            <img src="./images/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-3">Commercial</h3>
+                            <p class="text-card-description">The barn house captivates with its blend<br class="hidden lg:block"> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 bg-white p-6 rounded-2xl lg:w-[620px]">
+                        <div>
+                            <img src="./images/residential.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-3">Residential</h3>
+                            <p class="text-card-description">The barn house captivates with its blend<br class="hidden lg:block"> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Rectangle.png" alt="">
+                </div>
+            </div>
+         </section>
+         <!-- work process -->
+          <section class="container mx-auto lg:mb-24 mb-8 lg:pb-24 pb-8">
+            <div class="text-center">
+                <a class="btn bg-white rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>How we works</a>
+                <h2 class="font-bold lg:text-4xl text-2xl mt-4 lg:mb-6 mb-4">Our Works Process</h2>
+                <p class="text-description lg:mb-8 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication,<br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="card card-compact bg-concept-bg w-96 shadow-xl flex-col items-start p-6">
+                    <figure class="">
+                        <img
+                        src="./images/concept.png"
+                        alt="" />
+                    </figure>
+                    <div class=" p-0">
+                        <h2 class="card-title my-2">Concept</h2>
+                        <p class="text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="card card-compact bg-process-bg w-96 shadow-xl flex-col items-start p-6">
+                    <figure class="">
+                        <img
+                        src="./images/flow-chart.png"
+                        alt="" />
+                    </figure>
+                    <div class=" p-0">
+                        <h2 class="card-title my-2">Design Process</h2>
+                        <p class="text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="card card-compact bg-supervision-bg w-96 shadow-xl flex-col items-start p-6">
+                    <figure class="">
+                        <img
+                        src="./images/vision.png"
+                        alt="" />
+                    </figure>
+                    <div class=" p-0">
+                        <h2 class="card-title my-2">Supervision</h2>
+                        <p class="text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="card card-compact bg-budget-bg w-96 shadow-xl flex-col items-start p-6">
+                    <figure class="">
+                        <img
+                        src="./images/budget-planning.png"
+                        alt="" />
+                    </figure>
+                    <div class=" p-0">
+                        <h2 class="card-title my-2">Budget Planning</h2>
+                        <p class="text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+          </section>
     </main>
     <!-- footer -->
      <footer></footer>
