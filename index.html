@@ -29,6 +29,8 @@
                 'process-bg': 'rgba(239, 218, 110, 1)',
                 'supervision-bg': 'rgba(164, 218, 195, 1)',
                 'budget-bg': 'rgba(119, 170, 234, 1)',
+                'btn-secondary': 'rgba(171, 239, 95, 0.2)',
+                'footer-bg': 'rgba(28, 28, 28, 1)', 
               }
             }
           }
@@ -41,6 +43,9 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+        }
+        .project-bg {
+            background-image: url('./images/bg.jpg');
         }
     </style>
 </head>
@@ -153,7 +158,7 @@
             </div>
          </section>
          <!-- work process -->
-          <section class="container mx-auto lg:mb-24 mb-8 lg:pb-24 pb-8">
+          <section class="container mx-auto lg:mb-24 mb-8">
             <div class="text-center">
                 <a class="btn bg-white rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>How we works</a>
                 <h2 class="font-bold lg:text-4xl text-2xl mt-4 lg:mb-6 mb-4">Our Works Process</h2>
@@ -206,8 +211,79 @@
                 </div>
             </div>
           </section>
+          <!-- latest portfolio -->
+           <section class="bg-white  lg:py-24 py-8 lg:mb-24 md-8">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <a class="btn bg-btn-secondary rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>Explore our Latest works</a>
+                    <h2 class="font-bold lg:text-4xl text-2xl mt-4 lg:mb-6 mb-4">Our Latest Portfolio</h2>
+                    <p class="text-description lg:mb-8 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication,<br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex lg:flex-row flex-col gap-6">
+                        <!-- card 1 -->
+                    <div id="card-1" class="card card-side bg-base-100 border-solid border p-6 rounded-2xl lg:flex-row flex-col">
+                        <figure>
+                          <img
+                            src="./images/img1.png"
+                            alt="Movie" />
+                        </figure>
+                        <div class="ml-6">
+                          <h2 class="card-title">New movie is released!</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary">Watch</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 2 -->
+                      <div id="card-2" class="border p-6 rounded-2xl">
+                        <img src="./images/img2.png" alt="">
+                      </div>
+                    </div>
+                    <!--  -->
+                     <div class="flex lg:flex-row flex-col gap-6">
+                         <!-- card 3 -->
+                      <div id="card-3" class="border p-6 rounded-2xl">
+                        <img src="./images/img3.png" alt="">
+                      </div>
+                      <!-- card 4 -->
+                      <div id="card-4" class="card card-side bg-base-100 border-solid border p-6 rounded-2xl lg:flex-row flex-col">
+                        <figure>
+                          <img
+                            src="./images/img4.png"
+                            alt="Movie" />
+                        </figure>
+                        <div class="ml-6">
+                          <h2 class="card-title">New movie is released!</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary">Watch</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 5 -->
+                      <div id="card-5" class="border p-6 rounded-2xl">
+                        <img src="./images/img5.png" alt="">
+                      </div>
+                     </div>
+                </div>
+            </div>
+           </section>
+           <!-- project -->
+            <section class="bg-project-bg mt-10">
+                <div class="container mx-auto">
+                    <div class="text-center">
+                        <a class="btn bg-btn-secondary rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>Explore our Latest works</a>
+                        <h2 class="font-bold lg:text-4xl text-2xl mt-4 lg:mb-6 mb-4">Our Works Process</h2>
+                        <p class="text-description lg:mb-8 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication,<br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+            </section>
     </main>
     <!-- footer -->
-     <footer></footer>
+     <footer class="bg-footer-bg">
+
+     </footer>
 </body>
 </html>
