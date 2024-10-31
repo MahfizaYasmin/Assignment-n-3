@@ -21,6 +21,9 @@
               colors: {
                 clifford: '#da373d',
                 'btn-primary': 'rgba(171, 239, 95, 1)',
+                'banner-btn': 'rgba(171, 239, 95, 0.5)',
+                'description': 'rgba(73, 73, 73, 1)',
+                'card-description': 'rgba(115, 115, 115, 1)',
               }
             }
           }
@@ -37,9 +40,9 @@
     </style>
 </head>
 <body class="font-manrope">
-    <header class="container mx-auto lg:w-[1">
+    <header class="container mx-auto px-5">
         <!-- navbar -->
-         <nav class="mt-12 px-5">
+         <nav class="mt-12 mb-10">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="w-9 h-9 bg-btn-primary rounded-[50%] px-3 pt-1">
@@ -65,7 +68,7 @@
                     </div></a>
                   </div>
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn bg-white rounded-[50%] lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -92,6 +95,19 @@
                 </div>
               </div>
          </nav>
+         <!-- banner -->
+          <section>
+            <div class="flex justify-center">
+                <img src="./images/banner.png" alt="">
+            </div>
+            <div class="text-center">
+                <h2 class="font-extrabold text-2xl lg:text-6xl my-6">A barn house of this design has a<br class="hidden lg:block"> striking appearance</h2>
+                <p class="text-description">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br class="hidden lg:block"> accents, and large windows that flood the space with natural light.</p>
+                <a class="btn bg-banner-btn rounded-3xl font-extrabold text-lg mt-8">Book Consult <div class="w-8 h-8 bg-btn-primary rounded-[50%] px-1">
+                    <i class="fa-solid fa-arrow-up text-black text-center rotate-45"></i>
+                </div></a>
+            </div>
+          </section>
     </header>
     <main>
 
