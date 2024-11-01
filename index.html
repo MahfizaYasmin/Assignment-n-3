@@ -46,11 +46,13 @@
         }
         .project-bg {
             background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
         }
     </style>
 </head>
 <body class="font-manrope m-0">
-    <header class="container w-11/12 mx-auto px-5 lg:px-0 lg:mb-24 mb-8">
+    <header class="container w-11/12 mx-auto px-5 lg:px-0 lg:mb-24 mb-8 overflow-hidden">
         <!-- navbar -->
          <nav class="mt-12 mb-10">
             <div class="navbar bg-base-100">
@@ -119,7 +121,7 @@
             </div>
           </section>
     </header>
-    <main class="bg-gray-100 lg:px-0 px-5">
+    <main class="bg-gray-100 lg:px-0 px-5 overflow-hidden">
         <!-- liveable spaces -->
          <section class="py-8 lg:pt-24 relative  lg:mb-24 mb-8">
             <div class="ml-24 absolute top-4 left-8 hidden lg:block">
@@ -212,7 +214,7 @@
             </div>
           </section>
           <!-- latest portfolio -->
-           <section class="bg-white  lg:py-24 py-8 lg:mb-24 md-8">
+           <section class="bg-white  lg:py-24 py-8 ">
             <div class="container w-11/12 mx-auto">
                 <div class="text-center">
                     <a class="btn bg-btn-secondary rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>Explore our Latest works</a>
@@ -224,12 +226,12 @@
                         <!-- card 1 -->
                     <div id="card-1" class="card card-side bg-base-100 border-solid border p-6 rounded-2xl lg:flex-row flex-col">
                         <figure>
-                          <img
+                          <img class=""
                             src="./images/img1.png"
                             alt="Movie" />
                         </figure>
                         <div class="ml-6">
-                          <h2 class="card-title">Commercial</h2>
+                          <h2 class="card-title mt-4 lg:mt-0">Commercial</h2>
                           <p class="text-card-description">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                           <div class="card-actions justify-start">
                             <a class="btn bg-white rounded-3xl font-extrabold text-lg mt-2">View Details<div class="w-8 h-8 bg-btn-primary rounded-[50%] px-1">
@@ -240,24 +242,24 @@
                       </div>
                       <!-- card 2 -->
                       <div id="card-2" class="border p-6 rounded-2xl">
-                        <img src="./images/img2.png" alt="">
+                        <img class="w-full h-full" src="./images/img2.png" alt="">
                       </div>
                     </div>
                     <!--  -->
                      <div class="flex lg:flex-row flex-col gap-6">
                          <!-- card 3 -->
                       <div id="card-3" class="border p-6 rounded-2xl">
-                        <img src="./images/img3.png" alt="">
+                        <img class="w-full h-full" src="./images/img3.png" alt="">
                       </div>
                       <!-- card 4 -->
                       <div id="card-4" class="card card-side bg-base-100 border-solid border p-6 rounded-2xl lg:flex-row flex-col">
                         <figure>
-                          <img
+                          <img class=""
                             src="./images/img4.png"
                             alt="Movie" />
                         </figure>
                         <div class="ml-6">
-                            <h2 class="card-title">Commercial</h2>
+                            <h2 class="card-title mt-4 lg:mt-0">Commercial</h2>
                             <p class="text-card-description">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                             <div class="card-actions justify-start">
                               <a class="btn bg-white rounded-3xl font-extrabold text-lg mt-2">View Details<div class="w-8 h-8 bg-btn-primary rounded-[50%] px-1">
@@ -268,17 +270,40 @@
                       </div>
                       <!-- card 5 -->
                       <div id="card-5" class="border p-6 rounded-2xl">
-                        <img src="./images/img5.png" alt="">
+                        <img class="w-full h-full" src="./images/img5.png" alt="">
                       </div>
                      </div>
                 </div>
             </div>
            </section>
+           <!-- house plans -->
+            <section class="lg:py-20 py-8">
+                <div class="container w-11/12 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-6">
+                    <div>
+                        <img class="rounded-2xl" src="./images/exterior.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2 class="font-bold lg:text-4xl text-2xl lg:mb-6 mb-4">October Wrap-Up: Bold New House Plans with Moody Exteriors</h2>
+                        <p class="text-card-description">As the days grow shorter and shadows fall a bit earlier, October brings a hint of mystery and intrigue—and maybe a touch of Halloween spirit—perfect for introducing some of our latest house plans, each featuring dark, moody exteriors that command attention year-round. A dark exterior does more than just look good—it sets a bold, timeless vibe that adds strength and character. These moody tones create a grounded feel and look incredible against lush greenery, making the whole house stand out. If you’re after a modern, fresh look with a touch of drama, these five new designs offer the best of both worlds: bold yet welcoming.</p>
+                        <div class="flex lg:justify-end justify-start">
+                            <a class="btn bg-btn-primary rounded-3xl font-bold text-description border-none my-5"><i class="fa-solid fa-arrow-right-long"></i>Let’s Connect</a>
+                        </div>
+                        <div class="">
+                            <div class="flex gap-6">
+                                <p class="font-bold">Ana Coddington</p>
+                                <p class="text-description">Oct 31, 2024</p>
+                                <p class="text-description">Blog Post</p>
+                            </div>
+                            <hr class="w-[350px] mt-4 border-b-2">
+                        </div>
+                    </div>
+                </div>
+            </section>
            <!-- project -->
-            <section class="project-bg mt-10 lg:py-24 py-8">
+            <section class="project-bg bg-cover lg:py-24 py-8 border-4 border-white">
                 <div class="container w-11/12 mx-auto">
                     <div class="text-center">
-                        <a class="btn bg-btn-secondary rounded-3xl font-bold text-description"><i class="fa-solid fa-arrow-right-long"></i>Explore our Latest works</a>
+                        <a class="btn bg-btn-secondary rounded-3xl font-bold text-description border-none"><i class="fa-solid fa-arrow-right-long"></i>Let’s Connect</a>
                         <h2 class="font-bold lg:text-4xl text-2xl mt-4 lg:mb-6 mb-4">Let’s Discuss Next Project</h2>
                         <p class="text-description lg:mb-8 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication,<br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
                     </div>
@@ -303,7 +328,7 @@
                                 <textarea class="textarea textarea-bordered w-full bg-gray-100 border-none mt-3 rounded-3xl" placeholder="Bio" rows="10">Write your message here</textarea>
                               </div>
                               <div class="mt-8">
-                                <a class="btn w-full bg-btn-primary rounded-3xl font-extrabold text-lg">Send Mail <div class="w-8 h-8 bg-black rounded-[50%] px-1">
+                                <a class="btn w-full bg-btn-primary rounded-3xl font-extrabold text-lg border-none">Send Mail <div class="w-8 h-8 bg-black rounded-[50%] px-1">
                                     <i class="fa-solid fa-arrow-up text-white text-center rotate-45"></i>
                                 </div></a>
                               </div>
@@ -333,7 +358,7 @@
                 </ul>
             </div>
                 <div class="flex justify-center">
-                    <a class="btn bg-btn-primary rounded-3xl font-extrabold text-lg">Book Consult <div class="w-8 h-8 bg-black rounded-[50%] px-1">
+                    <a class="btn bg-btn-primary rounded-3xl font-extrabold text-lg border-none">Book Consult <div class="w-8 h-8 bg-black rounded-[50%] px-1">
                         <i class="fa-solid fa-arrow-up text-white text-center rotate-45"></i>
                     </div></a>
                 </div>
